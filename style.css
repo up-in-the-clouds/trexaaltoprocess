@@ -243,7 +243,6 @@ img.logo-project{
   padding-left: var(--space);
   position: fixed;
   top: 51px;
-  left: 137px;
   background-color: var(--light-green);
   color: var(--green);
   
@@ -479,6 +478,21 @@ a.credit:hover, a.credit-header:hover{
   .ribbon-consumer {
     max-width: 68px;
   }
+  .md-img {
+    display: inline-block;
+    margin-left: -34px;
+  }
+  .lg-img {
+    display: none;
+  }
+
+
+.menu-header{
+  z-index: 10;
+  left: 40px;
+}
+
+
 }
 
 @media (max-width: 767.9px) {
@@ -495,20 +509,12 @@ a.credit:hover, a.credit-header:hover{
     max-width: 85%;
     padding: 34px 17px;
 }
+
   .answer {
     display: block;
     max-width: 75%;
   }
-  .md-img {
-    display: inline-block;
-    margin-left: -34px;
-  }
-  .lg-img {
-    display: none;
-  }
-  .menu-dropdown-consumer {
-    left: 40px;
-  }
+
   .footer-top, .footer-bottom{
     flex-direction: column;
     max-width: 100%;
@@ -534,9 +540,7 @@ a.credit:hover, a.credit-header:hover{
   .answer {
     max-width: 100%;
   }
-  .menu-header{
-    z-index: 10;
-  }
+ 
   .menu-dropdown-consumer{
     width: 100%;
   }
