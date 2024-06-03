@@ -144,7 +144,9 @@ a:hover{
 }
 
 .underline-green{
-text-decoration: underline solid 4.25px #d9e09e;
+  text-decoration: underline;
+  text-decoration-color: #d9e09e;
+  text-decoration-thickness: 4.25px;
   width: fit-content;
 }
 
@@ -152,7 +154,9 @@ text-decoration: underline solid 4.25px #d9e09e;
   color: var(--orange);
 }
 .underline-orange{
-  text-decoration: underline solid 4.25px #ffd78f;
+  text-decoration: underline;
+  text-decoration-color: #ffd78f;
+  text-decoration-thickness: 4.25px;
   width: fit-content;
 }
 
@@ -467,53 +471,50 @@ a.credit:hover, a.credit-header:hover{
   .no-margin-bottom{
     margin-bottom: 0;
   }
-
-  @media (max-width: 1440.9px) {
-    .container{
-      max-width: 50%;
-    }
-    .extra_content{
-      max-width: 100%;
-    }
-
+/* Media Queries */
+@media (max-width: 1440.9px) {
+  .container {
+    max-width: 50%;
   }
-
-  @media (max-width: 1335.9px){
-    .ribbon-consumer {
-      max-width: 68px;}
-   
+  .extra_content {
+    max-width: 100%;
   }
+}
 
-
-  @media (max-width: 767.9px) {
-    :root{
-      --top-space:94px;
-    }
-    p {
-      font-size: 14px; /* Adding 'px' as the unit for font-size */
-    }
-    .container {
-      max-width: 75%; /* Adding '%' as the unit for width */
-    }
-  
-    .answer{
-      display: block;
-      max-width: 75%;
-    }
-    .md-img{
-      display: inline-block;
-      margin-left: -34px;
-    }
-    .lg-img{
-      display: none;
-    }
-    .menu-dropdown-consumer{
-      left: 40px;
-    }
+@media (max-width: 1335.9px) {
+  .ribbon-consumer {
+    max-width: 68px;
   }
+}
 
-  @media (max-width: 575.9px){
-    .answer{
-      max-width: 100%;
-    }
+@media (max-width: 767.9px) {
+  :root {
+    --top-space: 94px;
   }
+  p {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 75%;
+  }
+  .answer {
+    display: block;
+    max-width: 75%;
+  }
+  .md-img {
+    display: inline-block;
+    margin-left: -34px;
+  }
+  .lg-img {
+    display: none;
+  }
+  .menu-dropdown-consumer {
+    left: 40px;
+  }
+}
+
+@media (max-width: 575.9px) {
+  .answer {
+    max-width: 100%;
+  }
+}
