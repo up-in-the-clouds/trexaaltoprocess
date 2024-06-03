@@ -392,6 +392,7 @@ img.logo-project{
 .logo-footer{
   max-width: 12%;
   max-height: 12%;
+  height: 12%;
 }
 .footer-text{
   max-width: 45%;
@@ -470,7 +471,7 @@ a.credit:hover, a.credit-header:hover{
     max-width: 50%;
   }
   .extra_content {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -487,9 +488,13 @@ a.credit:hover, a.credit-header:hover{
   p {
     font-size: 14px;
   }
-  .container {
-    max-width: 75%;
+  h2{
+    font-size: 3em;
   }
+  .container {
+    max-width: 85%;
+    padding: 34px 17px;
+}
   .answer {
     display: block;
     max-width: 75%;
@@ -509,7 +514,7 @@ a.credit:hover, a.credit-header:hover{
     max-width: 100%;
     align-items: center;
   }
-  .footer-text.top-left{
+  .footer-text, .footer-text.top-left{
     max-width: 100%;
   }
   .logo-footer {
@@ -523,7 +528,22 @@ a.credit:hover, a.credit-header:hover{
 }
 
 @media (max-width: 575.9px) {
+  h2{
+    font-size: 2.5em;
+  }
   .answer {
     max-width: 100%;
+  }
+  .menu-header{
+    z-index: 10;
+  }
+  .menu-dropdown-consumer{
+    width: 100%;
+  }
+  .images{
+    height: 125px;
+  }
+  .container_questions{
+    height: 900px;
   }
 }
