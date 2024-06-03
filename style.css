@@ -182,14 +182,7 @@ table{
   padding-bottom: var(--top-space);
 
 }
-.img-right{
-  /* position: absolute; */
-  /* right: 20%; */
-}
-.img-left{
-  /* position: absolute; */
-  /* left: 20%; */
-}
+
 .image_left{
   width: 100%;
 left: 20%;
@@ -397,8 +390,8 @@ img.logo-project{
     width: -webkit-fill-available;
   }
 .logo-footer{
-  width: 12%;
-  height: 12%;
+  max-width: 12%;
+  max-height: 12%;
 }
 .footer-text{
   max-width: 45%;
@@ -510,6 +503,22 @@ a.credit:hover, a.credit-header:hover{
   }
   .menu-dropdown-consumer {
     left: 40px;
+  }
+  .footer-top, .footer-bottom{
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+  }
+  .footer-text.top-left{
+    max-width: 100%;
+  }
+  .logo-footer {
+    max-width: 25%;
+    max-height: max-content;
+    align-self: center;
+    }
+  .credits{
+    text-align: center;
   }
 }
 
