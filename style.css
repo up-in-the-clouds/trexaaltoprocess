@@ -38,7 +38,7 @@ background-color: var(--green);
   max-width: 768px;
   margin: auto;
   background-color: var(--light-grey);
-  padding: 140px 70px;
+  padding: 140px 70px 204px;
   height: inherit;
   position: relative;
   z-index: 4;
@@ -69,10 +69,10 @@ h2{
     font-family: 'Urbane', sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 25.5px;
+    font-size: 34px;
     /* font-size: 1.5em; */
     letter-spacing: 0.85px;
-    line-height: 35.5px;
+    line-height: 42px;
     /* line-height: 2.1em; */
     text-transform: uppercase;
     color: var(--green);
@@ -81,7 +81,7 @@ h2{
 
 h4{
     font-family: 'Urbane', sans-serif; 
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-size: 19px;
     /* font-size: 1.2em; */
@@ -127,13 +127,14 @@ h6{
 }
 
 a{
-  font-weight: 400;
+  font-weight: 600;
   font-size: inherit;
   text-decoration: underline;
   text-decoration-color: #d9e09e;
   text-decoration-thickness: 2.125px;
   color: var(--black);
   line-height: 25px;
+  letter-spacing: 0.5px;
 }
 
 a:hover{
@@ -199,12 +200,13 @@ filter: drop-shadow(0 0 0.1rem var(--light-grey));
 
 
 .buttons{
-  background-image: url(assets/q_circle.png);
-  width: 270px;
-  height: 183px;
+  background-image: url(assets/q_circle3.png);
+  width: 476px;
+  height: 229px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .menu-header{
@@ -265,26 +267,40 @@ img.logo-project{
     padding-top: var(--top-space);
     padding-bottom: var(--top-space);
     width: 80%; */
-     height: 700px;
+     height: 900px;
     position: relative;
   }
   
 
 .question{
-    max-width: 270px;
+    max-width: 300px;
     margin: auto;
+    display: inline-table;
 }
 .answer-box{
   display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-top: var(--quarter-space);
+    margin: auto;
+}
+
+.answer-box.simple-text{
+  max-width: 510px;
+  justify-content: normal;
+}
+
+.answer-box.inline-text{
+  justify-content: space-around;
+  align-items: center;
 }
 
 .answer-box-2{
   display: block;
   overflow-y: auto;
   max-height: 100vh;
+}
+p.link-item{
+  padding-right: 17px;
 }
 .answer{
     display: inline-block;
