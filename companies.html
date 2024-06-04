@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Companies landing</title>
     <link rel="stylesheet" href="https://use.typekit.net/rsj3kel.css" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -12,10 +12,38 @@
     />
   </head>
   <body>
-    <div class="background bg-img"></div>
+    <div class="background bg-orange"></div>
+    <!-- header starts -->
+    <div class="menu-header">
+      <div class="menu-consumer">
+        <div class="ribbon-consumer"><img src="assets/ribbon.png" /></div>
+        <div class="menu-click">
+          <img class="logo-project" src="assets/logo.svg" />
+          <span class="material-symbols-outlined toggle-arrow-m">
+            keyboard_arrow_down
+          </span>
+          <span
+            class="material-symbols-outlined toggle-arrow-up-m"
+            style="display: none"
+          >
+            keyboard_arrow_up</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="menu-dropdown-consumer">
+      <h4><a href="">Consumers</a></h4>
+      <p><a href="">Waste Hierarchy</a></p>
+      <p><a href="">Circular Consumption Tool</a></p>
+      <p><a href="">Locations for Textile Waste Disposal</a></p>
+      <p><a href="">Resources</a></p>
+    </div>
 
+    <!-- header ends -->
     <div class="container">
-      <img class="main-logo" src="assets/logo.svg" />
+      <h1 class="text-orange underline-orange">Companies & NGOs</h1>
+      <h2 class="text-green underline-green">Title</h2>
+      <h2 class="text-orange underline-orange">Title</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi deleniti
         molestiae, quaerat vitae laboriosam rerum perspiciatis maiores officiis
@@ -23,18 +51,37 @@
         consectetur fugit.
       </p>
       <div class="extra_content">
-        <div class="col2 grid-layout">
-          <a class="link-button" href="consumers.html">
-            <div class="button-img button-gr">
-              <h4 class="text-green"><strong> for consumers</strong></h4>
-            </div>
-          </a>
-          <a class="link-button or" href="companies.html">
-            <div class="button-img button-or">
-              <h4 class="text-orange"><strong>for companies & ngos</strong></h4>
-            </div>
-          </a>
+        <div class="images img-right">
+          <img class="image_right" src="assets/image.jpg" />
         </div>
+        <div class="images img-left">
+          <img class="image_left" src="assets/image.jpg" />
+        </div>
+        <a href="google.com">
+          <div class="buttons">
+            <h4>click</h4>
+          </div>
+        </a>
+        <div class="link_table">
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+        </div>
+        <div class="pdf_viewer"></div>
       </div>
     </div>
 
