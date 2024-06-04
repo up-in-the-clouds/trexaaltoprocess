@@ -34,6 +34,14 @@ background-color: var(--green);
 .background.bg-orange{
   background-color: var(--orange);
 }
+
+.background.bg-img{
+ background-image: url(assets/bgimg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 70%;
+
+}
 .container{
   max-width: 768px;
   margin: auto;
@@ -89,10 +97,12 @@ h4{
     /* color: var(--black); */
     text-transform: uppercase;
     /* border-bottom: 4.25px solid #d9e09e;     */
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: #d9e09e;
-    text-decoration-thickness: 4.25px;
+    text-decoration-thickness: 4.25px; */
 }
+
+
 h5, th{
   font-family: 'Urbane', sans-serif; 
   font-weight: 300;
@@ -137,6 +147,18 @@ a{
   letter-spacing: 0.5px;
 }
 
+a.or{
+  text-decoration-color: #ffd78f;
+}
+
+a.link-button:hover{
+border-radius: 100%;
+}
+
+a.link-button.or:hover{
+  background-color: #ffd78f;
+}
+
 a:hover{
   background-color: var(--light-green);
 }
@@ -144,11 +166,16 @@ a:hover{
   color: var(--green);
 }
 
+.bg-lightgreen{
+  background-color: var(--light-green);
+}
+.bg-lightorange{
+  background-color: #ffd78f;
+}
 .underline-green{
   text-decoration: underline;
   text-decoration-color: #d9e09e;
   text-decoration-thickness: 4.25px;
-  width: fit-content;
 }
 
 .text-orange{
@@ -158,7 +185,6 @@ a:hover{
   text-decoration: underline;
   text-decoration-color: #ffd78f;
   text-decoration-thickness: 4.25px;
-  width: fit-content;
 }
 
 .extra_content{
@@ -196,9 +222,6 @@ position: absolute;
 filter: drop-shadow(0 0 0.1rem var(--light-grey));
 }
 
-
-
-
 .buttons{
   background-image: url(assets/q_circle3.png);
   width: 476px;
@@ -207,8 +230,30 @@ filter: drop-shadow(0 0 0.1rem var(--light-grey));
   align-items: center;
   justify-content: center;
   margin: auto;
+  background-repeat: no-repeat;
 }
 
+.button-img{
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.button-img.button-gr{
+  background-image: url(assets/btn-gr.png);
+  
+
+}
+
+.button-img.button-or{
+background-image: url(assets/btn-or.png);
+}
+
+/* menu */
 .menu-header{
   position: fixed;
   top: 0;
@@ -221,17 +266,6 @@ filter: drop-shadow(0 0 0.1rem var(--light-grey));
   display: flex;
   align-items: center;
   height: 51px;
-}
-img.logo-project{
-  width: 94px;
-  padding-left: 4.25px;
-  padding-right: 4.25px;
-}
-.ribbon-consumer {
-  max-width: 145px;
-  display: flex;
-  max-height: 30px;
-  align-items: center;
 }
 .menu-click {
   display: inline-flex;
@@ -247,8 +281,33 @@ img.logo-project{
   top: 51px;
   background-color: var(--light-green);
   color: var(--green);
-  
 }
+
+.toggle-arrow-m, .toggle-arrow-up-m {
+  cursor: pointer; /* Change cursor to pointer to indicate clickable element */
+  align-self: center;
+}
+
+.ribbon-consumer {
+  max-width: 145px;
+  display: flex;
+  max-height: 30px;
+  align-items: center;
+}
+
+
+/* logos & imgs */
+img.main-logo{
+  max-width: 100%;
+  margin: auto;
+  padding: 17px;
+}
+img.logo-project{
+  width: 94px;
+  padding-left: 4.25px;
+  padding-right: 4.25px;
+}
+
 .lg-img{
   display: inline-block;
 }
@@ -256,10 +315,7 @@ img.logo-project{
   display: none;
 }
 
-.toggle-arrow-m, .toggle-arrow-up-m {
-  cursor: pointer; /* Change cursor to pointer to indicate clickable element */
-  align-self: center;
-}
+
 
 /* interactive tool */
   .container_questions{
@@ -271,7 +327,6 @@ img.logo-project{
     position: relative;
   }
   
-
 .question{
     max-width: 300px;
     margin: auto;
@@ -382,6 +437,8 @@ p.link-item{
     background-color: #ddd;
   }
 
+
+  /* footer */
   .footer{
     background-color: var(--black);
     color: var(--light-grey);
@@ -464,10 +521,6 @@ a.credit:hover, a.credit-header:hover{
     max-width: 28px;
   }
  
-.col2{
-  display: inline-flex;
-}
-
 
   img.md-logo{
     max-width: 64px;
@@ -480,6 +533,18 @@ a.credit:hover, a.credit-header:hover{
   .no-margin-bottom{
     margin-bottom: 0;
   }
+
+  /* layout */
+  .col2{
+    display: inline-flex;
+  }
+
+  .grid-layout{
+    width: 100%;
+    justify-content: space-around;
+    padding: var(--top-space) var(--space);
+  }
+
 /* Media Queries */
 @media (max-width: 1440.9px) {
   .container {
