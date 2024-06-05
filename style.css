@@ -318,10 +318,10 @@ img.logo-project{
   padding-right: 4.25px;
 }
 
-.lg-img{
+img.lg-img{
   display: inline-block;
 }
-.md-img{
+img.md-img{
   display: none;
 }
 
@@ -492,12 +492,12 @@ p.link-item{
     justify-content: space-between;
     width: -webkit-fill-available;
   }
-.logo-footer-lg{
+img.logo-footer-lg{
   max-width: 12%;
   max-height: 12%;
   height: 12%;
 }
-.logo-footer-sm{
+img.logo-footer-sm{
   display: none;
 }
 .footer-text{
@@ -606,11 +606,11 @@ a.credit:hover, a.credit-header:hover{
   .ribbon-consumer {
     max-width: 68px;
   }
-  .md-img {
+  img.md-img {
     display: inline-block;
     margin-left: -34px;
   }
-  .lg-img {
+  img.lg-img {
     display: none;
   }
 
@@ -669,10 +669,10 @@ a.credit:hover, a.credit-header:hover{
     width: 100%;
     max-width: 75%;
   }
-  .logo-footer-lg {
+  img.logo-footer-lg {
  display: none;
     }
-    .logo-footer-sm{
+    img.logo-footer-sm{
       display: block;
       max-width: 40%;
     }
@@ -715,7 +715,7 @@ a.credit:hover, a.credit-header:hover{
     width: 100%;
     max-width: 100%;
   }
-  .logo-footer-sm{
+  img.logo-footer-sm{
     max-width: 70%;
   }
   .no-margin-bottom {
