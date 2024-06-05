@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "4d": "level-4d",
     "5a": "level-5a",
     "5b": "level-5b",
-
     // Add more mappings as needed
   };
 
