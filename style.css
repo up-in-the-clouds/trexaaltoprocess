@@ -148,6 +148,7 @@ a.or{
   text-decoration-color: #ffd78f;
 }
 
+
 a.link-button{
   text-decoration: none;
 }
@@ -161,6 +162,12 @@ a.link-button.or:hover{
 
 a:hover{
   background-color: var(--light-green);
+}
+a.orange:hover{
+  background-color: var(--orange);
+}
+a.green:hover{
+  background-color: var(--green);
 }
 .text-green{
   color: var(--green);
@@ -315,7 +322,7 @@ background-image: url(assets/btn-or.png);
 
 .menu-click {
   display: inline-flex;
-  height: 36px;
+  /* height: 36px; */
   width: 270px;
 }
 .menu-dropdown{
@@ -537,9 +544,8 @@ p.link-item{
     width: -webkit-fill-available;
   }
 img.logo-footer-lg{
-  max-width: 12%;
-  max-height: 12%;
-  height: 12%;
+  max-width: 150px;
+    width: 100%;
 }
 img.logo-footer-sm{
   display: none;
@@ -626,6 +632,7 @@ a.credit:hover, a.credit-header:hover{
 
   .extra_content.home_content{
     min-height: auto;
+    padding-top: 0;
   }
   .col2{
     display: inline-flex;
@@ -633,8 +640,16 @@ a.credit:hover, a.credit-header:hover{
 
   .grid-layout{
     width: 100%;
-    justify-content: space-evenly;
-    padding: var(--top-space) var(--space);
+    justify-content: space-around;
+    padding: var(--two-spaces) var(--space) 0 0;
+  }
+
+  .display-lg{
+    display: inline-block;
+  }
+
+  .display-sm{
+    display: none;
   }
 
 /* Media Queries */
@@ -714,12 +729,15 @@ a.credit:hover, a.credit-header:hover{
     width: 100%;
     max-width: 75%;
   }
-  img.logo-footer-lg {
+  img.logo-footer-lg, .display-lg {
  display: none;
     }
-    img.logo-footer-sm{
+
+    img.logo-footer-sm, .display-sm{
       display: block;
-      max-width: 40%;
+        margin: auto;
+        max-width: 350px;
+        width: 100%;
     }
     .no-margin-bottom {
       margin-bottom: -17px;
@@ -784,6 +802,9 @@ img.md-logo{
 
 @media (max-width: 449.9px) {
 
+  h1{
+    font-size: 2.8em
+  }
   .grid-layout{
     width: auto;
   }
