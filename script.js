@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const toggleArrowM = document.querySelector(".toggle-arrow-m");
   const toggleArrowUpM = document.querySelector(".toggle-arrow-up-m");
-  const dropdownMenu = document.querySelector(".menu-dropdown-consumer");
+  const dropdownMenu = document.querySelector(".menu-dropdown");
 
   toggleArrowM.addEventListener("click", function () {
     dropdownMenu.style.display = "block";
