@@ -99,20 +99,80 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //menu
 // show more show less
+// document.addEventListener("DOMContentLoaded", function () {
+//   const toggleArrowM = document.querySelector(".toggle-arrow-m");
+//   const toggleArrowUpM = document.querySelector(".toggle-arrow-up-m");
+//   const dropdownMenu = document.querySelector(".menu-dropdown");
+
+//   toggleArrowM.addEventListener("click", function () {
+//     dropdownMenu.style.display = "block";
+//     toggleArrowM.style.display = "none";
+//     toggleArrowUpM.style.display = "inline";
+//   });
+
+//   toggleArrowUpM.addEventListener("click", function () {
+//     dropdownMenu.style.display = "none";
+//     toggleArrowM.style.display = "inline";
+//     toggleArrowUpM.style.display = "none";
+//   });
+// });
 document.addEventListener("DOMContentLoaded", function () {
+  const menuConsumer = document.querySelector(".menu-consumer");
   const toggleArrowM = document.querySelector(".toggle-arrow-m");
   const toggleArrowUpM = document.querySelector(".toggle-arrow-up-m");
   const dropdownMenu = document.querySelector(".menu-dropdown");
+  const closeMenu = document.getElementById("close-menu");
+  const links = document.querySelectorAll(".text-dropdown a"); // Get all links in the dropdown
 
-  toggleArrowM.addEventListener("click", function () {
-    dropdownMenu.style.display = "block";
+  // Function to open the menu
+  function openMenu() {
+    dropdownMenu.classList.add("show");
     toggleArrowM.style.display = "none";
     toggleArrowUpM.style.display = "inline";
+  }
+
+  // Function to close the menu
+  function closeMenuFunc() {
+    dropdownMenu.classList.remove("show");
+    setTimeout(() => {
+      dropdownMenu.style.display = "none";
+      toggleArrowM.style.display = "inline";
+      toggleArrowUpM.style.display = "none";
+    }, 300); // Wait for the animation to complete
+  }
+
+  // Open menu when clicking on menu-consumer
+  menuConsumer.addEventListener("click", function () {
+    dropdownMenu.style.display = "block";
+    setTimeout(openMenu, 10); // Small delay to trigger transition
   });
 
-  toggleArrowUpM.addEventListener("click", function () {
-    dropdownMenu.style.display = "none";
-    toggleArrowM.style.display = "inline";
-    toggleArrowUpM.style.display = "none";
+  // Close menu when clicking "X"
+  closeMenu.addEventListener("click", function () {
+    closeMenuFunc();
   });
+
+  // Close menu when clicking toggle-arrow-up-m
+  toggleArrowUpM.addEventListener("click", function () {
+    closeMenuFunc();
+  });
+
+  // Close menu when clicking outside the menu
+  document.addEventListener("click", function (event) {
+    if (
+      dropdownMenu.classList.contains("show") &&
+      !dropdownMenu.contains(event.target) &&
+      !menuConsumer.contains(event.target)
+    ) {
+      closeMenuFunc();
+    }
+  });
+
+  // Mark the current page link as active
+  // const currentPage = window.location.pathname.split("/").pop();
+  // links.forEach((link) => {
+  //   if (link.getAttribute("href").includes(currentPage)) {
+  //     link.classList.add("active-link");
+  //   }
+  // });
 });
