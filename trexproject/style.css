@@ -855,14 +855,14 @@ p.body-inter {
 }
 
 .rect.rig {
-  left: 15%;
-  top: 85%;
+  left: 0%;
+  top: 65%;
   height: 157px;
 }
 
 .rect.lef {
-  right: 15%;
-  top: 85%;
+  right: 0%;
+  top: 65%;
   height: 157px;
 }
 
