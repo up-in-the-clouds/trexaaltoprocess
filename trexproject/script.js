@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 document.addEventListener("DOMContentLoaded", function () {
-  const menuConsumer = document.querySelector(".menu-consumer");
+  const menuConsumer = document.querySelector(".menu-header");
   const toggleArrowM = document.querySelector(".toggle-arrow-m");
   const toggleArrowUpM = document.querySelector(".toggle-arrow-up-m");
   const dropdownMenu = document.querySelector(".menu-dropdown");

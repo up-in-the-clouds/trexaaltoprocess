@@ -209,6 +209,11 @@ a.green:hover{
   text-decoration-thickness: 1.75px;
 }
 
+.active-link-com {
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 1.75px;
+}
 .text-green{
   color: var(--green);
 }
