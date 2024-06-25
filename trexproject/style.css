@@ -785,6 +785,9 @@ a.credit.inline-text{
     justify-content: space-between;
     padding-right: var(--space);
   }
+  .video-content{
+    padding: var(--two-spaces);
+  }
 
 
   /* circular textiles */
