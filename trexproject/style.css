@@ -73,6 +73,12 @@ opacity: 70%;
   position: relative;
   padding: 170px 70px 204px;
 }
+
+.container-text{
+  max-width: 768px;
+  margin: auto;
+  padding-left: 34px;
+}
 h1{
   font-family: 'Urbane', 'Poppins',sans-serif;
   font-weight: 600;
@@ -141,11 +147,7 @@ p, td, li{
   /* color: var(--black); */
 }
 
-.container p{
-  max-width: 768px;
-  margin: auto;
-  padding-left: 34px;
-}
+
 
 .extra_content p{
   margin: revert;
@@ -164,6 +166,10 @@ h6{
   font-style: normal;
   font-size: 12.8px;
   line-height: 17px;
+}
+
+h6.sm-lineheight{
+  margin-top: -21px;
 }
 
 a{
@@ -786,9 +792,17 @@ a.credit.inline-text{
     padding-right: var(--space);
   }
   .video-content{
-    padding: var(--two-spaces);
+    padding: var(--space);
+    max-width: 100%;
+    margin: auto;
   }
-
+  iframe {
+    border: none;
+}
+.video-frame{
+  width: 400px;
+  height: 225px;
+}
 
   /* circular textiles */
   /* circular textiles */
@@ -1144,6 +1158,17 @@ h4.menu-title {
 img.md-logo{
   padding-top: 8.5px;
   padding-right: 0;
+  margin-bottom: -17px;
+}
+
+.video-content{
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+.video-frame{
+  width: 100%;
+  height: 100%;
   margin-bottom: -17px;
 }
 }
